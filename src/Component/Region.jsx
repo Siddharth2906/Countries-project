@@ -1,13 +1,13 @@
 import React from 'react'
 
-const Region = () => {
+const Region = ({setCount}) => {
   return (
     <div className='Region'>
-    <select name="cars" >
-      <option hidden="">Filter By region</option>
+    <select name="cars" onChange={(e)=>{setCount(e.target.value.toLowerCase())}}>
+  <option hidden >Filter By region</option>
   <option value="Asia">Asia</option>
   <option value="Oceania">Oceania</option>
-  <option value="North America">North America </option>
+  <option value="Americas">North Americas </option>
   <option value="Caribbean">Caribbean</option>
   <option value="Europe">Europe</option>
   <option value="Middle East">Middle East</option>

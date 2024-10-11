@@ -90,9 +90,10 @@ a{
   
 }
 .Detail {
-width: 600px;
+width:50vw;
+/* width: 100vw; */
  display: flex;
- flex-wrap: wrap;
+ /* flex-wrap: wrap; */
  gap:50px;
  position: absolute;
  top: 50%;
@@ -101,7 +102,7 @@ width: 600px;
  
 }
 .Detail img {
-width:50%
+width:20vw;
 
 }
 .innerDetail{
@@ -122,5 +123,22 @@ p{
   color: White;
 }
 .border{
-  padding: 10px;
+padding: 10px;
+margin-left: 10px;
+width: 500px;
+ display: flex;
+ flex-wrap: wrap;
+ flex-direction: row;
+ gap: 1rem;
+ 
+}
+.border-name{
+  padding: 5px 10px;
+  /* height: 10px; */
+  /* line-height: 3rem; */
+  margin-left: 10px;
+  border-radius: 20px;
+
+  background-color: rgba(128, 128, 128, 0.39);
+  box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.3)
 }

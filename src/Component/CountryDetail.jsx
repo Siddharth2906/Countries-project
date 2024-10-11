@@ -77,11 +77,12 @@ const CountryDetail = () => {
   <p><b>Tld : </b>{country.tid}</p>
   <p><b>Currencies : </b>{country.currencies}</p>
   <p><b>Capital : </b>{country.capital}</p>
-  </div>
+ 
  {country.border.length!=0&& <p className='border'><b>borders :</b>{ country.border.map((item, i)=>{
-     return <Link to={`/country/${item}`} key={i}>{item}</Link>
+     return <Link to={`/country/${item}`} key={i} className='border-name'>{item}</Link>
    
   })}</p>}
+   </div>
  </div>
 
   </>)

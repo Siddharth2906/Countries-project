@@ -36,7 +36,7 @@ console.log(component)
 
       <div className='mini-header'>
         <SearchContainer setCount={setCount}/>
-        <Region/>
+        <Region setCount={setCount}/>
        
       </div>
       <div className='countries-container'>
@@ -45,7 +45,7 @@ console.log(component)
       {
       component.length==0?newarray.fill(0).map((i,j)=>{
         return(<Cardskimmer key={j}/>)
-      }):component.filter((item)=> item.name.common.toLowerCase().includes(count))
+      }):component.filter((item)=> item.name.common.toLowerCase().includes(count) || item.region.toLowerCase().includes(count))
        .map((item,index)=>{
 
             return(<Link to={`/country/${item.name.common}` } state={item}><Card key={index} flags={item.flags.svg} title={item.name.common} region={item.region} population={item.population}  capital={item.capital}  /></Link>)
